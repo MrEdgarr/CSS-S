@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .image_block{
+            width: 400px;
+            height: 650px;
+            position: relative;
+            /* Xoay 3d */
+            perspective: 1000px;
+        }
+        .image_block .layer1{width: 100%;}
+        .image_block .white{
+            background-color: white;
+            width: 370px;
+            height: 550px;
+            top: 15px;left: 14px;
+            position: absolute;
+            transition: 0.4s;
+            opacity: 0;
+
+            /*Xac dinh bản lề*/
+            /* a% = khoang cach ben trai
+            b% = khoang cach tu tren xuong */
+            /* transform-origin: a b; */
+        }
+        .image_block .icon{
+            font-size: 50px;
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            transition: 0.4s;
+            opacity: 0;
+
+        }
+        .image_block .bigtext{
+            font-size: 25px;
+            position: absolute;
+            left: 50px;
+            bottom: 130px;
+            transition: 0.3s;
+            font-weight: bold;
+            opacity: 0;
+        }
+        .image_block .smalltext{
+            font-size: 15px;
+            position: absolute;
+            left: 50px;
+            bottom: 130px;
+            transition: 0.3s;
+            opacity: 0;
+        }
+
+
+
+        .image_block:hover .layer1{}
+        .image_block:hover .white{opacity: 0.9;  /*Hiệu ứng Xoay*/transform: rotateY(10deg); }
+        .image_block:hover .icon{opacity: 1;}
+        .image_block:hover .bigtext{opacity: 1; bottom: 160px; /*Độ trễ*/ transition-delay: 0.2s;}
+        .image_block:hover .smalltext{opacity: 1; transition-delay: 0.5s;}
+    </style>
+</head>
+<body>
+    <div class="image_block">
+        <img src="3.jpg" alt="" class="layer1">
+        <div class="white"></div>
+        <div class="icon"><i class="fa fa-gratipay"></i></div>
+        <div class="bigtext">90S PACKAGE</div>
+        <div class="smalltext">Digital art</div>
+    </div>
+</body>
+</html>

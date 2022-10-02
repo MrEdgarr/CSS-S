@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <title>Title</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p name="a">...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p name="a">...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p name="a">...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p name="a">...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p name="a">...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p name="a">...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+                <div class="demo"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //Đều trả về mọt mảng
+        //Duyệt mảng bằng vòng lặp for
+
+        // Truy cập đến thẻ h3
+        var a = document.getElementsByTagName("h3");
+        console.log(a);
+
+        // Gọi đến class có tên là ('...');
+        var b = document.getElementsByClassName('caption');
+        console.log(b);
+
+        // Gọi đến name có tên là ('...');
+        var c = document.getElementsByName('a');
+        console.log(c);
+
+        // Gọi đến id có tên là ('...');
+        // Duy nhất
+        var d = document.getElementById('')
+        console.log(d);
+
+        // Truy vấn đến phần tử đầu tiên gọi đến (.class || #id)
+        var e = document.querySelector('')
+        console.log(e);
+
+        //Giong a và b
+        // Truy cập được tất cả phần tử
+        // Có thể gọi theo kiểu cha con
+        // Có thể gọi data-thuộctính (html 5)
+        // Có thể gọi như CSS
+        var f = document.querySelectorAll("");
+        console.log(f);
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

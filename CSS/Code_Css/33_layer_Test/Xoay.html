@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .bo{
+            width: 600px;
+            height: 600px;
+            position: relative;
+        }
+        .xoay{
+            color: white;
+            font-size: 100px;
+            position: absolute;
+            top: 160px;
+            left: 260px;
+            transition: 50s;
+        }
+        .bo:hover .xoay{
+            transform: rotate(36000deg);
+        }
+        .image{
+            width: 450px;
+
+            position: absolute;
+            left: 75px;
+            top: 75px;
+            transition: 0.4s;;
+        }
+    </style>
+</head>
+<body>
+    <div class="bo">
+        <img src="1.jpg" alt="" class="image">
+        <div class="fa fa-play-circle-o xoay"></div>
+    </div>
+</body>
+</html>

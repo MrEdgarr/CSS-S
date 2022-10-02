@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //anonymous => hàm khong tên
+        var a = function (x,y){
+            return (x+y);
+        }
+        console.log(a(345,76));
+
+
+        //Closure function : Không gian đóng dành cho hàm
+        function chao() {
+            var ten = "rgerg";
+            return function () {
+                console.log('END' + ten);
+            }
+        }
+        var a = chao(); //biến a là 1 hàm anonymous
+        a();
+
+    </script>
+</body>
+</html>

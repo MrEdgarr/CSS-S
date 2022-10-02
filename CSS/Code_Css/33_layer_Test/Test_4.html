@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .items{
+            width: 500px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        .items .image{
+            width: 100%;
+            height: 100%;
+        }
+        .items .mau{
+            width: 100%; 
+            height: 100%; 
+            position: absolute; 
+            background-color: rgb(228, 228, 228);
+            transition: 0.4s;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            opacity: 0;
+        }
+        .items:hover .mau{
+            border: 10px black solid;
+            opacity: 1;
+        }
+        .items .text{
+            position: absolute;
+            top: 30px; left: 30px;
+            transition: 0.4s;
+            opacity: 0;
+        }
+        .items:hover .text{opacity: 1;}
+        .items .text h3{}
+        .items .text p{}
+    </style>
+</head>
+<body>
+    <div class="items">
+        <img src="4.jpg" alt="" class="image">
+        <div class="mau"></div>
+        <div class="text">
+            <h3>Introduce Yourself</h3>
+            <p>Dessign</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .arrow_box {
+            margin: auto;
+            position: relative;
+            background: #88b7d5;
+            border: 10px solid #c2e1f5;
+            font-size: 30px;
+            width: 400px;
+            height: 250px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .arrow_box:after,
+        .arrow_box:before {
+            left: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .arrow_box:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-left-color: #88b7d5;
+            border-width: 30px;
+            margin-top: -30px;
+        }
+
+        .arrow_box:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-left-color: #c2e1f5;
+            border-width: 44px;
+            margin-top: -44px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="arrow_box">
+        CSS ARROW PLEASE!
+    </div>
+</body>
+
+</html>

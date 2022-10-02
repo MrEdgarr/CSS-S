@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .menu {
+            visibility: hidden;
+        }
+
+        .mautrang {
+            background-color: black;
+            color: rgb(201, 25, 25);
+        }
+
+        .drop {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-group">
+        <button class="btn dropdown-toggle" type="button" id="triggerId" data-hienthi="dropdown">
+            This dropdown's menu is right-aligned
+        </button>
+        <div class="menu dropdown-menu-right" id="dropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item disabled" href="#">Disabled action</a>
+            <h6 class="dropdown-header">Section header</h6>
+            <a class="dropdown-item" href="#">Action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">After divider action</a>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button class="btn dropdown-toggle" type="button" id="triggerId" data-hienthi="dropdown_1">
+            This dropdown's menu is right-aligned
+        </button>
+        <div class="menu dropdown-menu-right" id="dropdown_1">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item disabled" href="#">Disabled action</a>
+            <h6 class="dropdown-header">Section header</h6>
+            <a class="dropdown-item" href="#">Action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">After divider action</a>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button class="btn dropdown-toggle" type="button" id="triggerId" data-hienthi="dropdown_2">
+            This dropdown's menu is right-aligned
+        </button>
+        <div class="menu dropdown-menu-right" id="dropdown_2">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item disabled" href="#">Disabled action</a>
+            <h6 class="dropdown-header">Section header</h6>
+            <a class="dropdown-item" href="#">Action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">After divider action</a>
+        </div>
+    </div>
+
+
+
+
+
+    
+    <div class="">
+        <button class="" type="" id="" data-toggle="dropdown">
+            This dropdown's menu is right-aligned
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" id="">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item " href="#">Disabled action</a>
+            <h6 class="dropdown-header">Section header</h6>
+            <a class="dropdown-item" href="#">Action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">After divider action</a>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="">
+        <button class="" type="" data-toggle="dropdown">
+            Dropdown
+        </button>
+        <div class="dropdown-menu">
+            <button class="dropdown-item">afasf</button>
+            <button class="dropdown-item disable">435345345</button>
+        </div>
+    </div>
+
+    <script>
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     //Khai bao cac bien su dung
+
+        //     var nut = document.querySelectorAll(".btn");
+        //     var nd_hienthi = document.querySelectorAll(".menu");
+        //     for (let i = 0; i < nut.length; i++) {
+        //         nut[i].onclick = function(){
+
+        //             for (let k = 0; k < nut.length; k++) {
+        //                 nut[k].classList.remove('mautrang'); 
+        //             }
+
+        //             this.classList.toggle("mautrang");
+
+        //             //lay ve data-Attribute
+        //             // console.log(this.getAttribute('data-toggle'));
+        //             var nd = this.getAttribute('data-hienthi');
+
+        //             var drop = document.getElementById(nd);
+
+        //             for (let i = 0; i < nd_hienthi.length; i++) {
+        //                 nd_hienthi[i].classList.remove("drop"); 
+        //             }
+
+        //             drop.classList.toggle('drop');
+        //         }  
+        //     }
+        // },false)
+
+        document.addEventListener("DOMContentLoaded", function () {
+            //Khai bao cac bien su dung
+
+            var nut = document.querySelectorAll(".btn");
+            var nd_hienthi = document.querySelectorAll(".menu");
+            for (let i = 0; i < nut.length; i++) {
+                nut[i].onclick = function () {
+                    if (this.classList[2] == 'mautrang') {//kiem tra su ton tai cua class mautrang tai vi tri 2 cua arr
+
+                        this.classList.remove('mautrang');
+                        
+                        //Goi den data-getAttribute
+                        var nd = this.getAttribute('data-hienthi');
+                        var drop = document.getElementById(nd);
+                        drop.classList.toggle('drop');
+
+                    } else {//Va nguoc lai
+                        //Su dung vong lap for de xoa cac class khi kich vao phan tu khac
+                        for (let k = 0; k < nut.length; k++) {
+                            nut[k].classList.remove('mautrang');
+                        }
+                        //doi tuong dc click(this) -> them class mautrang
+                        this.classList.toggle("mautrang");
+
+                        //lay ve data-Attribute
+                        // console.log(this.getAttribute('data-hienthi'));
+                        var nd = this.getAttribute('data-hienthi');
+
+                        var drop = document.getElementById(nd);
+
+                        //An di cac doi tuong da qua su dung
+                        for (let i = 0; i < nd_hienthi.length; i++) {
+                            nd_hienthi[i].classList.remove("drop");
+                        }
+                        //Them class drop de hien thi menu
+                        drop.classList.toggle('drop');
+                    }
+                }
+            }
+        }, false)
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

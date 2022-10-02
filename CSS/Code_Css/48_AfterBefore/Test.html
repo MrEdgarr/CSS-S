@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a.text{
+            position: relative;
+            text-decoration: none;
+            color: #000;
+        }
+
+        /* Cach 1 */
+        a.text div{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: yellow;
+            transition: 0.4s;
+        }
+        a.text:hover div{
+            width: 100%;
+        }
+
+        /* CACH 2 */
+        a.text::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;    
+            background-color: yellow;
+            transition: 0.4s;
+        }
+        a.text:hover:after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <a href="" class="text">
+        <span>Nature</span>
+        <div></div>
+    </a>
+    <a href="" class="text">
+        Nature
+    </a>
+</body>
+</html>

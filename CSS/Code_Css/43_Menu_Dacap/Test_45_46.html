@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+            text-decoration: none;
+        }
+        .menu > ul{display: flex;}
+        .items{
+            position: relative;
+            height: 20px;
+            line-height: 20px;
+            background-color: rosybrown;
+        }
+        .items .layer1{}
+        .items:hover .layer1{}
+        .items .layer2{
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.4s;
+        }
+        .items:hover .layer2{
+            visibility: visible;
+            opacity: 1;
+        }
+        .items .layer2 ul{}
+        .items .layer2 ul li{}
+        .items .layer2 ul li a{text-decoration: none;}
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>
+                <div class="items">
+                    <a href="" class="layer1">Thông tin</a>
+                    <div class="layer2">
+                        <ul>
+                            <li><a href="">The thao dien tu</a></li>
+                            <li><a href="">The thao dien tu</a></li>
+                            <li><a href="">The thao dien tu</a></li>
+                            <li><a href="">The thao dien tu</a></li>
+                            <li><a href="">The thao dien tu</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>Test menu</li>
+            <li>Test menu</li>
+            <li>Test menu</li>
+            <li>Test menu</li>
+        </ul>
+    </div>
+</body>
+</html>

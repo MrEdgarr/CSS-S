@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, html{
+            margin: 0; height: 100%;
+        }
+        .menu{
+            background-image: url(1.jpg);
+            filter: brightness(0.5) grayscale(100);
+            background-size: contain;
+            height: 100%;
+        }
+        .menu:hover{
+            filter: brightness(1) grayscale(0);
+        }
+        .menu ul{list-style: none; font-size: 20px; margin: 0;}
+        .menu ul li{
+            padding-bottom: 10px;
+            transition: 0.5s;
+        }
+        .menu ul li a{text-decoration: none;}
+        .menu ul li .icon{display: inline; opacity: 0; transition: 0.5s;color: white;}
+        .menu ul li:hover .icon{ opacity: 1;}
+        .menu ul li:hover{margin-left: 20px;}
+        .menu ul li .text{display: inline;color: white;}
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="">
+                    <div class="icon"><i class="fa fa-long-arrow-right"></i></div>
+                    <div class="text">Home</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon"><i class="fa fa-long-arrow-right"></i></div>
+                    <div class="text">About</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon"><i class="fa fa-long-arrow-right"></i></div>
+                    <div class="text">Fashion</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon"><i class="fa fa-long-arrow-right"></i></div>
+                    <div class="text">Contact</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

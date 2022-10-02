@@ -1,0 +1,24 @@
+form{
+    margin: 0 auto;
+    width: 700px;
+}
+input{
+    height: 50px;
+    width: 100%;
+    display: inline;
+    background-color: ghostwhite;
+    border: none;
+    padding-left: 20px;
+
+}
+h1{
+    text-align: center;
+}
+button{
+    text-align: center;
+    background-color: limegreen;
+    height: 50px;
+    width: 100%;
+    opacity: 0.9;
+    margin-top: 50px;
+}

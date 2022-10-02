@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+    border:none;
+}
+html,body,.wraper,.slides,ul,li{
+    width: 100%;
+    height: 100%;
+}
+.wraper {
+    position: relative;
+}
+.slides ul li{
+    background-size: cover;
+}
+ 
+.nut ul li i {
+    font-size: 40px;
+}
+ 
+.slides ul li {
+    position: absolute;
+}
+.nut {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ 
+.nut ul li {
+    display: inline;
+    cursor: pointer;
+}
+.nut ul li i{
+    transition: 0.5s;
+}
+.nut ul li:hover i{
+    color:white;
+    transition: 0.5s;
+}
+.slides ul li{
+    opacity: 0 ;
+}
+ul li.hienlen{
+    opacity: 1; 
+    transition: 0.5s;
+}
